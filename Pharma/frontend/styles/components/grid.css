@@ -1,0 +1,40 @@
+@media (max-width: 479px) {
+  :host([theme~="mobile"]) #header {
+    display: none;
+  }
+
+  :host([theme~="mobile"]:not([theme~="no-border"])) {
+    border: none;
+  }
+}
+#header > [part~='row'] {
+  background-color: #F3F6F9;
+  border-radius: 19px !important;
+  border: 8px solid white;
+  overflow: hidden;
+}
+
+[part~='row']:hover {
+  background-color: #F3F6F9;
+}
+
+[part~='cell']
+{
+  background-color: inherit !important;
+}
+:host([overflow~='top']) [part~='row']:last-child [part~='header-cell'],
+:host(:not([theme~='no-row-borders'])) [part~='row']:last-child [part~='header-cell']
+{
+  border-bottom: none;
+}
+
+
+
+
+:host(:not([theme~='no-border']))
+{
+  border-radius: 16px;
+overflow: hidden;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 6px;
+border:none;
+}

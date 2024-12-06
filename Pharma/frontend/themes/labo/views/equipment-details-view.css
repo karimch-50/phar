@@ -1,0 +1,166 @@
+.profile-card {
+    /* width: 250px; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.profile-image {
+    width: 88px;
+    height:88px;
+    border-radius: 50%;
+    /* margin-bottom: 10px; */
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: bold;
+    /* margin-bottom: 5px; */
+    text-align: center;
+    width: 100%;
+}
+
+.edit-button {
+    background-color: #008037;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    justify-content: start;
+    align-items: end;
+    margin-right: 0px;
+    /* transition: background-color 0.3s ease; */
+}
+
+.edit-button:hover {
+    cursor: pointer;
+    background-color: #d2dae3;
+}
+
+.wrapper-text-style{
+    font-size: 16px;
+    font-weight:normal;
+
+}
+
+.image-wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-bar-card {
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding-left: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.custom-tabs {
+    background-color: #ffffff;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-tabs::part(tab) {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-tabs::part(tab[selected]) {
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-tabs::part(tab:hover) {
+    background-color: #e0e0e0;
+}
+
+.main-layout {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    /* padding-left: 5px; */
+    position: relative;
+    min-height: 700px;
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    /* text-align: center; */
+}
+
+.card-column{
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.selected-tab { 
+    /* 1F78FF */
+    background-color: #bae2cb;
+    border-radius: 8px;
+    padding: 16px; 
+}
+
+
+   
+.layout {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.side-column {
+    min-width: 450px;
+    width: 30% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Styles for screen width 1024px and below (iPad Pro in portrait mode) */
+@media (max-width: 1900px) {
+    .layout {
+        flex-direction: column;
+        width: 100%;
+    }
+    .side-column {
+        flex-direction: row;
+    }
+    .profile-card {
+        min-width: 100%;
+    }
+}
+
+.span-style{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-go-back-patient {
+    background-color: transparent; /* Makes the background transparent */
+    border: none; /* Removes the border */
+    color: #007bff; /* Sets the text color */
+    font-size: 60px; /* Increases the font size */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    padding: 10px; /* Adds padding */
+    margin: 0; /* Removes margin */
+    position: absolute;
+    left: 0px;
+}

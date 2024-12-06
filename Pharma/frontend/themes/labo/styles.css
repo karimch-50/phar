@@ -1,0 +1,220 @@
+@import url('./main-layout.css');
+@import url('./views/dash-view.css');
+@import url('./views/gridwith-filters-view.css');
+@import url('./views/equipment-details-view.css');
+
+html {
+    --lumo-primary-color: #008037;
+    --lumo-primary-text-color: #008037;
+    --lumo-primary-color-10pct: hsla(148, 100%, 60%, 0.13);
+}  
+
+.download-button {
+    background-color: #008037;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.download-button-evaluation
+{
+    background-color: #008037;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.btn-qr-code{
+    background-color: #008037;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-go-back {
+    background-color: transparent; 
+    border: none;
+    /* color: #007bff; */
+    font-size: 60px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0;
+}
+
+.withShadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 6px;
+    border-radius: 16px;
+}
+
+:root {
+    --app-bar-height: var(--lumo-size-xl);
+  
+    --navi-drawer-width: calc(var(--lumo-size-m) * 7);
+    --navi-drawer-rail-width: calc(var(--lumo-size-m) * 1.75);
+    --navi-item-indentation: calc(var(--lumo-icon-size-s) + var(--lumo-space-l));
+  
+    --details-drawer-width: calc(var(--lumo-size-m) * 11);
+  
+    --transition-duration-s: 160ms;
+    --transition-duration-m: 240ms;
+    --transition-duration-l: 320ms;
+  
+    /* Responsive sizing and spacing */
+    --lumo-space-r-m: var(--lumo-space-m);
+    --lumo-space-r-l: var(--lumo-space-l);
+    --lumo-space-r-x: var(--lumo-space-l);
+    --lumo-space-wide-r-m: var(--lumo-space-wide-m);
+    --lumo-space-wide-r-l: var(--lumo-space-wide-l);
+}
+
+@media (max-width: 479px) {
+    :root {
+        --lumo-space-r-x: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1023px) {
+    :root {
+        --lumo-space-r-x: var(--lumo-space-m);
+    }
+}
+
+@media (max-width: 1023px) {
+    :root {
+        --lumo-space-r-m: var(--lumo-space-s);
+        --lumo-space-r-l: var(--lumo-space-m);
+        --lumo-space-wide-r-m: var(--lumo-space-wide-s);
+        --lumo-space-wide-r-l: var(--lumo-space-wide-m);
+    }
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.root {
+    background-color: var(--lumo-contrast-5pct);
+}
+
+.app-header-outer,
+.app-footer-outer {
+    z-index: 3;
+}
+
+vaadin-grid-cell-content {
+    text-overflow: ellipsis;
+}
+
+vaadin-text-field {
+    align-self: auto;
+}
+
+
+/* add poppins font */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecnFHGPc.woff2) format('woff2');
+}
+
+/* apply poppins font */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* backGround image for login page*/
+
+/* #vaadinLoginOverlayWrapper::part(overlay) {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+#vaadinLoginOverlayWrapper::part(brand) {
+    /* set the background image shatyLogo in the bottom right corner */
+    background-image: url("images/logo1.png");
+    background-size: 70px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: #008037;
+}
+
+
+/* #vaadinLoginOverlayWrapper::part(overlay) {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .responsive-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 800px) {
+    .responsive-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .responsive-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.responsive-horizontal-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+@media (max-width: 800px) {
+    .responsive-horizontal-layout {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .responsive-horizontal-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.v-gantt .v-timeline-cell {
+    height: 500px; /* Adjust the cell height as needed */
+}
+
+/* Change the width of Gantt chart cells (time blocks) */
+.v-gantt .v-gantt-grid-cell .gantt-step-element {
+    width: 500px; /* Adjust the cell width as needed */
+}
