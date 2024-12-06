@@ -1,0 +1,17 @@
+{
+  "productionMode": false,
+  "eagerServerLoad": false,
+  "npmFolder": "/Users/MAC/Desktop/phar",
+  "node.version": "v20.11.1",
+  "node.download.root": "https://nodejs.org/dist/",
+  "frontendFolder": "/Users/MAC/Desktop/phar/frontend",
+  "connect.javaSourceFolder": "/Users/MAC/Desktop/phar/src/main/java",
+  "javaResourceFolder": "/Users/MAC/Desktop/phar/src/main/resources",
+  "connect.applicationProperties": "/Users/MAC/Desktop/phar/src/main/resources/application.properties",
+  "connect.openApiFile": "/Users/MAC/Desktop/phar/target/generated-resources/openapi.json",
+  "project.frontend.generated": "/Users/MAC/Desktop/phar/frontend/generated",
+  "pnpm.enable": false,
+  "bun.enable": false,
+  "require.home.node": false,
+  "build.folder": "target"
+}
