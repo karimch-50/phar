@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <!-- Project from https://start.vaadin.com/project/5ce23f9f-6d89-4f4a-a35a-a5dd81f8d59d -->
-    <groupId>com.labo.fs</groupId>
-    <artifactId>labo</artifactId>
-    <name>labo</name>
+    <groupId>com.pharma.fs</groupId>
+    <artifactId>pharma</artifactId>
+    <name>pharma</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 

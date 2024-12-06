@@ -9,14 +9,14 @@ import { existsSync as existsSync3, readFileSync as readFileSync2 } from "fs";
 import { resolve as resolve3 } from "path";
 
 // target/plugins/application-theme-plugin/theme-generator.js
-import { globSync as globSync2 } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/glob/dist/mjs/index.js";
+import { globSync as globSync2 } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/glob/dist/mjs/index.js";
 import { resolve as resolve2, basename as basename2 } from "path";
 import { existsSync as existsSync2, readFileSync, writeFileSync } from "fs";
 
 // target/plugins/application-theme-plugin/theme-copy.js
 import { readdirSync, statSync, mkdirSync, existsSync, copyFileSync } from "fs";
 import { resolve, basename, relative, extname } from "path";
-import { globSync } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/glob/dist/mjs/index.js";
+import { globSync } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/glob/dist/mjs/index.js";
 var ignoredFileExtensions = [".css", ".js", ".json"];
 function copyThemeResources(themeFolder2, projectStaticAssetsOutputFolder, logger) {
   const staticAssetsThemeFolder = resolve(projectStaticAssetsOutputFolder, "themes", basename(themeFolder2));
@@ -466,7 +466,7 @@ function extractThemeName(frontendGeneratedFolder) {
 // target/plugins/theme-loader/theme-loader-utils.js
 import { existsSync as existsSync4, readFileSync as readFileSync3 } from "fs";
 import { resolve as resolve4, basename as basename3 } from "path";
-import { globSync as globSync3 } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/glob/dist/mjs/index.js";
+import { globSync as globSync3 } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/glob/dist/mjs/index.js";
 var urlMatcher = /(url\(\s*)(\'|\")?(\.\/|\.\.\/)(\S*)(\2\s*\))/g;
 function assetsContains(fileUrl, themeFolder2, logger) {
   const themeProperties = getThemeProperties2(themeFolder2);
@@ -533,18 +533,18 @@ function rewriteCssUrls(source, handledResourceFolder, themeFolder2, logger, opt
 
 // target/vaadin-dev-server-settings.json
 var vaadin_dev_server_settings_default = {
-  frontendFolder: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/laboratoire/./frontend",
+  frontendFolder: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/pharmaratoire/./frontend",
   themeFolder: "themes",
-  themeResourceFolder: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/laboratoire/./frontend/generated/jar-resources",
-  staticOutput: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/laboratoire/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  themeResourceFolder: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/pharmaratoire/./frontend/generated/jar-resources",
+  staticOutput: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/pharmaratoire/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
   generatedFolder: "generated",
-  statsOutput: "C:\\Users\\ahamdaouialaoui\\Desktop\\Custom Job\\Back-End\\laboratoire\\target\\classes\\META-INF\\VAADIN\\config",
-  frontendBundleOutput: "C:\\Users\\ahamdaouialaoui\\Desktop\\Custom Job\\Back-End\\laboratoire\\target\\classes\\META-INF\\VAADIN\\webapp",
-  devBundleOutput: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/laboratoire/target/dev-bundle/webapp",
-  devBundleStatsOutput: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/laboratoire/target/dev-bundle/config",
-  jarResourcesFolder: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/laboratoire/./frontend/generated/jar-resources",
-  themeName: "labo",
-  clientServiceWorkerSource: "C:\\Users\\ahamdaouialaoui\\Desktop\\Custom Job\\Back-End\\laboratoire\\target\\sw.ts",
+  statsOutput: "C:\\Users\\ahamdaouialaoui\\Desktop\\Custom Job\\Back-End\\pharmaratoire\\target\\classes\\META-INF\\VAADIN\\config",
+  frontendBundleOutput: "C:\\Users\\ahamdaouialaoui\\Desktop\\Custom Job\\Back-End\\pharmaratoire\\target\\classes\\META-INF\\VAADIN\\webapp",
+  devBundleOutput: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/pharmaratoire/target/dev-bundle/webapp",
+  devBundleStatsOutput: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/pharmaratoire/target/dev-bundle/config",
+  jarResourcesFolder: "C:/Users/ahamdaouialaoui/Desktop/Custom Job/Back-End/pharmaratoire/./frontend/generated/jar-resources",
+  themeName: "pharma",
+  clientServiceWorkerSource: "C:\\Users\\ahamdaouialaoui\\Desktop\\Custom Job\\Back-End\\pharmaratoire\\target\\sw.ts",
   pwaEnabled: false,
   offlineEnabled: false,
   offlinePath: "'offline.html'"
@@ -554,16 +554,16 @@ var vaadin_dev_server_settings_default = {
 import {
   defineConfig,
   mergeConfig
-} from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/vite/dist/node/index.js";
-import { getManifest } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/workbox-build/build/index.js";
-import * as rollup from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/rollup/dist/es/rollup.js";
-import brotli from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/rollup-plugin-brotli/lib/index.cjs.js";
-import replace from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/@rollup/plugin-replace/dist/es/index.js";
-import checker from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/vite-plugin-checker/dist/esm/main.js";
+} from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/vite/dist/node/index.js";
+import { getManifest } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/workbox-build/build/index.js";
+import * as rollup from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/rollup/dist/es/rollup.js";
+import brotli from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/rollup-plugin-brotli/lib/index.cjs.js";
+import replace from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/@rollup/plugin-replace/dist/es/index.js";
+import checker from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/vite-plugin-checker/dist/esm/main.js";
 
 // target/plugins/rollup-plugin-postcss-lit-custom/rollup-plugin-postcss-lit.js
-import { createFilter } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/@rollup/pluginutils/dist/es/index.js";
-import transformAst from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/transform-ast/index.js";
+import { createFilter } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/@rollup/pluginutils/dist/es/index.js";
+import transformAst from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/transform-ast/index.js";
 var assetUrlRE = /__VITE_ASSET__([\w$]+)__(?:\$_(.*?)__)?/g;
 var escape = (str) => str.replace(assetUrlRE, '${unsafeCSSTag("__VITE_ASSET__$1__$2")}').replace(/`/g, "\\`").replace(/\\(?!`)/g, "\\\\");
 function postcssLit(options = {}) {
@@ -617,9 +617,9 @@ function postcssLit(options = {}) {
 
 // vite.generated.ts
 import { createRequire } from "module";
-import { visualizer } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/node_modules/rollup-plugin-visualizer/dist/plugin/index.js";
-var __vite_injected_original_dirname = "C:\\Users\\ahamdaouialaoui\\Desktop\\Custom Job\\Back-End\\laboratoire";
-var __vite_injected_original_import_meta_url = "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/laboratoire/vite.generated.ts";
+import { visualizer } from "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/node_modules/rollup-plugin-visualizer/dist/plugin/index.js";
+var __vite_injected_original_dirname = "C:\\Users\\ahamdaouialaoui\\Desktop\\Custom Job\\Back-End\\pharmaratoire";
+var __vite_injected_original_import_meta_url = "file:///C:/Users/ahamdaouialaoui/Desktop/Custom%20Job/Back-End/pharmaratoire/vite.generated.ts";
 var require2 = createRequire(__vite_injected_original_import_meta_url);
 var appShellUrl = ".";
 var frontendFolder = path.resolve(__vite_injected_original_dirname, vaadin_dev_server_settings_default.frontendFolder);
